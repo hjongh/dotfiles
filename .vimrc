@@ -1,7 +1,7 @@
-" Enabling syntax highlighting
+" enable syntax highlighting
 syntax on
 
-" Leader shortcuts
+" leader shortcuts
 :let mapleader = " "
 nmap <leader>nt :NERDTree<ENTER>
 
@@ -32,6 +32,8 @@ filetype plugin indent on
 
 " Gruvbox
 set background=dark
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_contrast_light = 'hard'
 colorscheme gruvbox
 
 " disable markdown folding
