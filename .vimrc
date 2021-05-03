@@ -12,8 +12,8 @@ nmap <leader>nt :NERDTree<ENTER>
 :set number
 
 " VUNDLE
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible
+filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -23,12 +23,12 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugins
 Plugin 'preservim/nerdtree'
 Plugin 'morhetz/gruvbox'
-Plugin 'godlygeek/tabular'   " required for vim-markdown
-Plugin 'plasticboy/vim-markdown'
+Plugin 'godlygeek/tabular'   	  " required for vim-markdown
+Plugin 'plasticboy/vim-markdown'  " removes quotation highlighting in markdown
 
 " VUNDLE
-call vundle#end()            " required
-filetype plugin indent on    " required
+call vundle#end()
+filetype plugin indent on
 
 " Gruvbox
 set background=dark
