@@ -1,9 +1,12 @@
-" enable syntax highlighting
+" Enabling syntax highlighting
 syntax on
 
-" leader shortcuts
+" Leader shortcuts
 :let mapleader = " "
 nmap <leader>nt :NERDTree<ENTER>
+nmap <leader>w <C-W>w
+nmap <leader>h <C-W>h
+nmap <leader>l <C-W>l
 
 " word wrapping
 :set wrap
