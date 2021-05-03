@@ -14,6 +14,12 @@ nmap <leader>l <C-W>l
 " line numbers
 :set number
 
+" set tab to 4 spaces
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 " VUNDLE
 set nocompatible
 filetype off
