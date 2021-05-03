@@ -41,3 +41,12 @@ colorscheme gruvbox
 
 " disable markdown folding
 set nofoldenable
+
+" Open NERDTree when running vim without a file
+function! StartUp()
+    if 0 == argc()
+	NERDTree
+    end
+endfunction
+
+autocmd VimEnter * call StartUp()
