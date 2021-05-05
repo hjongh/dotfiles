@@ -32,6 +32,7 @@ Plugin 'preservim/nerdtree'
 Plugin 'morhetz/gruvbox'
 Plugin 'godlygeek/tabular'   	  " required for vim-markdown
 Plugin 'plasticboy/vim-markdown'  " removes quotation highlighting in markdown
+Plugin 'ycm-core/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on
@@ -53,3 +54,13 @@ function! StartUp()
 endfunction
 
 autocmd VimEnter * call StartUp()
+
+" automatically close YouCompleteMe preview windows
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+
+nnoremap <Leader>g :YcmCompleter GoTo<ENTER>
+
+" jump forward and back
+nnoremap <Leader>o <C-o>
+nnoremap <Leader>i <C-i>
