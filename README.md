@@ -1,7 +1,8 @@
-# Steps before you can run Vim!
+# Steps to use these .vimrc files
 
-1. Download [Vundle](https://github.com/VundleVim/Vundle.vim).
-2. Launch Vim and run `:PluginInstall`.
+1. Download [Vundle](https://github.com/VundleVim/Vundle.vim). Vundle is a vim plugin manager. Only need a one-line command to download Vundle.
+2. Copy the `.vimrc` file you want to use to your root directory
+3. Launch Vim and run `:PluginInstall`.
 
 # Extra steps to install YouCompleteMe
 
